@@ -2903,10 +2903,10 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.25) !important;
 					}
 
-			.main.style2 ul.major-icons li .icon {
+			/*.main.style2 ul.major-icons li .icon {
 				border-color: #ffffff;
 			}
-
+*/
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
@@ -3194,14 +3194,20 @@ input, select, textarea {
 
 		#footer ul.major-icons li .icon {
 			border-color: #ffffff;
+			margin-left: auto;
+    margin-right: auto;
 		}
 
 		#footer .icon.major {
 			color: #ffffff;
+			margin-left: auto;
+    margin-right: auto;
 		}
 
 		#footer .icons {
 			margin: 0;
+			margin-left: auto;
+    margin-right: auto;
 		}
 
 		#footer .copyright {
@@ -3209,6 +3215,8 @@ input, select, textarea {
 			list-style: none;
 			margin: 2em 0 0 0;
 			padding: 0;
+			margin-left: auto;
+    margin-right: auto;
 		}
 
 			#footer .copyright li {
@@ -3217,12 +3225,16 @@ input, select, textarea {
 				line-height: 1em;
 				margin-left: 1em;
 				padding: 0 0 0 1em;
+				margin-left: auto;
+    margin-right: auto;
 			}
 
 				#footer .copyright li:first-child {
 					border-left: 0;
 					margin-left: 0;
 					padding: 0;
+					margin-left: auto;
+    margin-right: auto;
 				}
 
 /* XLarge */
@@ -3426,6 +3438,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 3em 1.5em 3em 1.5em ;
+
 			}
 
 	}
@@ -3523,7 +3536,7 @@ bodyimg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgba(20, 20, 20, 1);
+
 }
 
 img {
@@ -3551,19 +3564,7 @@ figure {
 	overflow: hidden;
 }
 
-figure::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	background: rgba(0, 0, 0, 0.5);
-	transform-origin: center;
-	opacity: 0;
-	transform: scale(2);
-	transition: opacity 300ms;
-}
+
 
 figcaption {
 	position: absolute;
@@ -3592,29 +3593,3 @@ a:is(:hover, :focus) figcaption {
 	transition: opacity 600ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	figcaption {
-		transform: translate3d(0, 2rem, 0);
-	}
-	
-	figure::after {
-		border-radius: 50%;
-		opacity: 1;
-		transform: scale(0);
-		transition: transform 900ms;
-	}
-	
-	a:is(:hover, :focus) figure::after {
-		transform: scale(2.5);
-	}
-
-	a:is(:hover, :focus) figcaption {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-		transition: opacity 600ms 400ms, transform 600ms 400ms;
-	}
-
-	a:is(:hover, :focus) img {
-		transform: scale(1.2);
-	}
-}
