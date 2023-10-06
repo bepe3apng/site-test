@@ -3123,6 +3123,8 @@ input, select, textarea {
 
 		#footer a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
+			margin: auto 20px;
+}
 		}
 
 			#footer a:hover {
