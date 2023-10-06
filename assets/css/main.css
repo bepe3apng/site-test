@@ -148,6 +148,9 @@ input, select, textarea {
 	h1 {
 		font-size: 2.25em;
 		line-height: 1.35em;
+		text-shadow: 0px 0px 15px Teal;
+
+
 	}
 
 	h2 {
@@ -2413,9 +2416,9 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
-		ul li {
+	/*	ul li {
 			padding-left: 0.5em;
-		}
+		}*/
 
 		ul.alt {
 			list-style: none;
@@ -2916,12 +2919,12 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #2957a4;
+		background-image: url("images/Gradient24x.png");
+		object-fit: contain; 
 		color: rgba(255, 255, 255, 0.05);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(9ed4d7 20%, #85a1c4 10%, #674b98 60%, #1e58a5);
 		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-size: fill,							fill,							fill;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
@@ -3078,7 +3081,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			background-image: url("images/Gradient24x.png");
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3547,7 +3550,7 @@ img {
 	display: block;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
-	transition: transform 1000ms;
+
 }
 
 ul {
@@ -3555,7 +3558,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	gap: 0.5rem;
+	gap: 0.7rem;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	max-width: 100%;
 	width: 70rem;
@@ -3566,7 +3569,34 @@ figure {
 	position: relative;
 	overflow: hidden;
 }
+<style>
+img[tabindex="0"] {
+  cursor: zoom-in;
 
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+
+  aspect-ratio: 0;
+}
+img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+
+}
+</style>
 
 
 figcaption {
