@@ -483,7 +483,7 @@ input, select, textarea {
 
 		.row {
 			margin-top: 0;
-			margin-left: -2em;
+=
 		}
 
 			.row > * {
@@ -2569,6 +2569,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 1.25em 0 0;
+
 		}
 
 			ul.icons li:last-child {
