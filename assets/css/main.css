@@ -2903,10 +2903,10 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.25) !important;
 					}
 
-			/*.main.style2 ul.major-icons li .icon {
+			.main.style2 ul.major-icons li .icon {
 				border-color: #ffffff;
 			}
-*/
+
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
