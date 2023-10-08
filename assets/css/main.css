@@ -2062,6 +2062,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
+
 /* Form */
 
 	form {
@@ -2361,8 +2362,12 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-	}
-
+		}
+		.fit-picture {
+ 		 width: 25%;
+ 		 display: flex;
+ 		 align-items: center;
+		}
 		.image img {
 			border-radius: 4px;
 			display: block;
@@ -2395,14 +2400,20 @@ input, select, textarea {
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 50%;
 			}
+			.image.fitn imgn {
+			display: block;
+			margin: 0 0 2em 0;
+
+		}
+
 
 /* List */
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
+
 		padding-left: 1.25em;
 	}
 
@@ -2412,7 +2423,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+
 		padding-left: 1em;
 	}
 
@@ -3015,11 +3026,12 @@ input, select, textarea {
 		background-size: 100% 100%;; 
 		color: rgba(255, 255, 255, 0.05);
 		background-attachment: fixed,							fixed,							fixed;
-		background-position: top left,						center center,					center center;
+		background-position: top left,						center center,					top right;
 		background-size: fill,							fill,							fill;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+
 	}
 
 		#header a {
@@ -3033,7 +3045,16 @@ input, select, textarea {
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
 			color: #ffffff;
 		}
-
+		#header img{ 
+			width:10%; 
+			display: block;
+    		aspect-ratio: 4 / 5;
+    		object-fit: cover;
+    		image-rendering: pixelated;
+margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 0px 35px black;
+		}
 		#header header p {
 			color: #ffffff;
 		}
@@ -3207,10 +3228,10 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #4686a0;
+		
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(9ed4d7 20%, #85a1c4 10%, #674b98 60%, #1e58a5);
+		background-image: linear-gradient(90deg,#4f4c96,#7067a6,#84398a);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
@@ -3642,13 +3663,12 @@ img {
 	display: block;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
-
+	image-rendering: pixelated;
 }
 
 ul {
 	list-style: none;
-	
-	margin-top: 40px;
+	margin: 0;
 	padding: 0;
 	display: grid;
 	gap: 0.7rem;
@@ -3661,6 +3681,10 @@ figure {
 	margin: 0;
 	position: relative;
 	overflow: hidden;
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
 }
 <style>
 img[tabindex="0"] {
