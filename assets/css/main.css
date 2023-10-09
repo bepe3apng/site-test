@@ -1,12 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-
-/*
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -72,7 +65,7 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
+
 
 	html {
 		box-sizing: border-box;
@@ -99,7 +92,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Montserrat", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -243,7 +236,7 @@ input, select, textarea {
 		text-align: right;
 	}
 
-/* Container */
+
 
 	.container {
 		margin: 0 auto;
@@ -292,7 +285,7 @@ input, select, textarea {
 
 		}
 
-/* Row */
+
 
 	.row {
 		display: flex;
@@ -486,7 +479,6 @@ input, select, textarea {
 
 		.row {
 			margin-top: 0;
-=
 		}
 
 			.row > * {
@@ -2005,7 +1997,7 @@ input, select, textarea {
 
 		}
 
-/* Section/Article */
+
 
 	section.special, article.special {
 		text-align: center;
@@ -2063,7 +2055,7 @@ input, select, textarea {
 	}
 
 
-/* Form */
+
 
 	form {
 		margin: 0 0 2em 0;
@@ -2247,7 +2239,7 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
-/* Box */
+
 
 	.box {
 		border-radius: 4px;
@@ -2268,7 +2260,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-/* Icon */
+
 
 	.icon {
 		text-decoration: none;
@@ -2355,7 +2347,7 @@ input, select, textarea {
 				line-height: 1em;
 			}
 
-/* Image */
+
 
 	.image {
 		border-radius: 4px;
@@ -2405,7 +2397,7 @@ input, select, textarea {
 		}
 
 
-/* List */
+
 
 	ol {
 		list-style: decimal;
@@ -2422,10 +2414,6 @@ input, select, textarea {
 
 		padding-left: 1em;
 	}
-
-	/*	ul li {
-			padding-left: 0.5em;
-		}*/
 
 		ul.alt {
 			list-style: none;
@@ -2446,7 +2434,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-/* Actions */
+
 
 	ul.actions {
 		display: -moz-flex;
@@ -2568,7 +2556,7 @@ input, select, textarea {
 
 		}
 
-/* Icons */
+
 
 	ul.icons {
 		cursor: default;
@@ -2590,7 +2578,7 @@ input, select, textarea {
 				font-size: 1.5em;
 			}
 
-/* Major Icons */
+
 
 	ul.major-icons {
 		list-style: none;
@@ -2627,7 +2615,7 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
-/* Table */
+
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -2694,7 +2682,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
+
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2824,7 +2812,7 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-/* Main */
+
 
 	.main {
 		padding: 6em 0 4em 0 ;
@@ -3014,7 +3002,7 @@ input, select, textarea {
 			.main.style3 .icon.major {
 				color: #ffffff;
 			}
-/* Header */
+
 
 	#header {
 		padding: 9em 0 9em 0 ;
@@ -3223,7 +3211,7 @@ margin-left: auto;
 		opacity: 1;
 	}
 
-/* Footer */
+
 
 	#footer {
 		padding: 6em 0 6em 0 ;
@@ -3355,7 +3343,7 @@ margin-left: auto;
     margin-right: auto;
 				}
 
-/* XLarge */
+
 
 	@media screen and (max-width: 1680px) {
 
@@ -3373,7 +3361,7 @@ margin-left: auto;
 
 	}
 
-/* Large */
+
 
 	@media screen and (max-width: 1140px) {
 
@@ -3429,7 +3417,7 @@ margin-left: auto;
 
 	}
 
-/* Medium */
+
 
 	@media screen and (max-width: 980px) {
 
@@ -3477,7 +3465,7 @@ margin-left: auto;
 
 	}
 
-/* Small */
+
 
 	@media screen and (max-width: 736px) {
 
@@ -3561,7 +3549,7 @@ margin-left: auto;
 
 	}
 
-/* XSmall */
+
 
 	@media screen and (max-width: 480px) {
 
@@ -3613,7 +3601,7 @@ margin-left: auto;
 
 	}
 
-/* XXSmall */
+
 
 	@media screen and (max-width: 320px) {
 
