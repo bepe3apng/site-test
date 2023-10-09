@@ -3042,11 +3042,12 @@ input, select, textarea {
 			color: #ffffff;
 		}
 		#header img{ 
-			width:20%; 
+			width:15%; 
 			display: block;
     		aspect-ratio: 4 / 5;
     		object-fit: cover;
     			image-rendering: -webkit-optimize-contrast;
+    			-ms-interpolation-mode: nearest-neighbor;
   	image-rendering: -o-crisp-edges;
   	image-rendering: -moz-crisp-edges;
 margin-left: auto;
@@ -3658,13 +3659,15 @@ bodyimg {
 
 img {
 	width: 100%;
+	height: auto;
+	min-height: 200;
+	max-height: 400;
 	display: block;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	image-rendering: -webkit-optimize-contrast;
   	image-rendering: -o-crisp-edges;
   	image-rendering: -moz-crisp-edges;
-
 
 }
 
